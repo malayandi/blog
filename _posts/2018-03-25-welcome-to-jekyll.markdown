@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-excerpt: "Test"
+excerpt: "This is the default initial post for a Jekyll blog."
 date:   2018-03-25 20:15:39 +0800
 categories: jekyll update
 ---

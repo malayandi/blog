@@ -19,7 +19,7 @@ header {
 
 .site-header {
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border-top: 0px solid $grey-color-light;
   border-bottom: 0px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
@@ -31,6 +31,10 @@ header {
 // Reducing gap between post title and excerpt
 h3 {
     margin-bottom: 0.25em;
+}
+
+.post-title {
+    font-size: 2.5em;
 }
 
 .site-footer {

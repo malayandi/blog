@@ -8,7 +8,9 @@ categories:
 
 _**TL;DR:** I tried blogging before and it didn’t work. I’m going to try blogging again and hopefully it’ll work._
 
-I've always wanted to write a blog and indeed, at various points of time in my life, I did try to. Unfortunately, each and every one of those attempts at blogging fizzled out very quickly. But yet, here am I attempting to start a blog once again. A reasonable person might ask what makes this attempt any different. Previously, my motivations for starting a blog were one of _"Everyone is doing it"_ or _"I want to make a lot of money from serving ads"_. Now however, that's no longer the case.
+I've always wanted to write a blog and indeed, at various points of time in my life, I did try to. Unfortunately, each and every one of those attempts at blogging fizzled out very quickly. But yet, here am I attempting to start a blog once again.
+
+A reasonable person might ask what makes this attempt any different. While previously my motivation for starting a blog was one of _"Everyone is doing it"_ or _"I want to make a lot of money from serving ads"_, that's no longer the case now.
 
 --
 
@@ -28,8 +30,8 @@ The open nature of a blog allows me to partake in this wonderful tradition of op
 
 So, what can you as a reader expect from this blog?
 
-As I previously mentioned, I hope to write about topics that I've been curious about. This means that you can expect the vast majority of posts on this blog to be technical posts on topics that fall somewhere in the intersection of mathematics, statistics, and computer science; considering [my background and research interests](http://www.andypalan.com), you can especially expect a good number of posts on topics in AI/ML. To give you a better idea of what that means, I'm currently working on two posts: on (1) the multiple ways of looking at Poisson Processes and (2) autoencoders.
+As I previously mentioned, I hope to write about topics that I find interesting and have, for one reason or another, been curious about. This means that you can expect the vast majority of posts on this blog to be technical posts on topics that fall somewhere in the intersection of mathematics, statistics, and computer science; considering [my background and research interests](http://www.andypalan.com), you can especially expect a good number of posts on topics in AI/ML. To give you a better idea of what that means, I'm currently working on two posts: on (1) the multiple ways of looking at Poisson Processes and (2) autoencoders.
 
 Additionally, I intend to write the *occasional* opinion piece, primarily to overcome my fear of taking a public stand on tough issues – a platform as open and permanent as a blog seems an appropriate place to confront that fear head on.
 
-I'm aiming to update this blog somewhat frequently, with a new post every 2-4 weeks or so. I know this might seem rather vague but that's intentional. I'm trying here to delicately balance (1) setting myself concrete targets to aim for and (2) giving myself enough room for error so I don't beat myself up too much when I inevitably miss my target at some point. Hopefully this works :)
+I'm aiming to update this blog somewhat frequently, with a new post every 2-4 weeks or so. I know this might seem rather vague but that's intentional. I'm trying here to delicately balance (1) setting myself concrete targets to aim for and (2) giving myself enough room for error so I don't beat myself up too much when I inevitably miss my target at some point :)

@@ -2,7 +2,7 @@
 layout: post
 title:  "Inverting the Poisson Process"
 excerpt: "We consider an alternative definition of the Poisson process - derived from an implication of the traditional definition - and show that both definitions are equivalent."
-date:   2018-04-28 00:00:00 +0800
+date:   2018-05-01 00:00:00 +0800
 categories: "probability"
 ---
 

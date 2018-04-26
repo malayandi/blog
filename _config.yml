@@ -17,12 +17,12 @@ title: electric sheep
 email: malayandi12 AT gmail DOT com
 description: >- # this means to ignore newlines until "baseurl:"
   
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.electricsheep.farm" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "http://www.electricsheep.farm" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Uncomment below two lines for local testing
-#baseurl: ""
-#url: ""
+baseurl: ""
+url: ""
 
 twitter_username: 
 github_username:

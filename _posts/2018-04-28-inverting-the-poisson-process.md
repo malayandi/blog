@@ -45,6 +45,7 @@ Using this definition, we can show that (1) the time between any two consecutive
 We now show (1). Consider an arbitrary arrival $X_j$ that arrives at some time $s$. We will show that $W_j$ is distributed according to an $Exponential(\lambda)$ distribution by showing that they have the same survival function (i.e., $P(W_j > t)$).
 
 As shown in Figure 2, the waiting time $W_j$ is greater than some value $t$, there must have been no arrival in the interval $[s, s+t]$. Thus,
+
 $$
 \begin{align*}
 P(W_j > t) &= P(N_{(s,s+t)} = 0)\\
@@ -81,6 +82,7 @@ _**Note**_: _Recall that the probability that a continuous random variable $X$ t
 Now, let's find the probability that there is exactly one arrival in $[0,t]$. This means that the time of the first arrival $T_1$ (and therefore the first waiting time $W_1$) must be at some point less than $t$; for now, let's say that the first arrival is near $x$ (i.e. $x\in dx = (x, x+dx)$). The second arrival must however be at some point greater than $t$; this means that the second waiting time $W_2$ must be greater that $t-x$. (Technically speaking, we require that $W_2 > t-x-dx$ but we can ignore the $dx$ term since it will vanish when we take the limit $dx\rightarrow 0$.)
 
 Now, what is this mysterious $x$ value that $W_1$ takes? The answer is that $x$ could be anything between $0$ and $t$; as long as $x$ falls within this interval and the $W_2$ is greater than $t-x$, we will have exactly one arrival in this interval. Thus, by the Law of Total Probability, we have to compute the probability that $W_1$ is near $x$ and $W_2$ is greater than $t-x$ for _every possible value of $x$_ in the interval $[0,t]$, and then sum all these probabilities up to arrive at the desired answer: the total probability that we have exactly one arrival in this interval. Since we are dealing with continuous probabilities, we replace the sum with an integral and proceed as follows:
+
 $$
 \begin{align*}
 	P(N_t = 1) &= \int P(T_1\in dx, T_2 > t)\\
@@ -91,6 +93,7 @@ $$
 	&= e^{-\lambda t} \lambda t = e^{-\lambda t} \frac{\lambda t}{1!}.
 \end{align*}
 $$
+
 As suggested by my final line of work, this is again what we would expect if $N_t\sim Poisson(\lambda t)$. 
 
 ### Case 2
@@ -98,6 +101,7 @@ As suggested by my final line of work, this is again what we would expect if $N_
 Let's look at one slightly harder iteration of this problem before doing the general case; now, we will find the probability that there are exactly two arrivals in $[0,t]$. As with before, we require that that the time of the first arrival, $T_1$ (and therefore also $W_1$), is near some $t_1$, where $t_1 < t$ (we change the name here for notational convenience). We similarly require that $T_2$ is near some $t_2$, where $0 < t_1 < t_2 < t$; this means that we require that $W_2$ is near $(t_2 - t_1)$. We finally require that $T_3$ be greater than $t$; therefore, we require that $W_3$ be greater than $(t-t_2)$. We will once again integrate over all the possible values of $t_1$ and $t_2$ to compute the total probability. (So yes, we do have a double integral this time around!)
 
 The bounds of this integral are a little tricky. We will first integrate over $t_1$, considering $t_2$ to be some fixed value. (This is important; the problem becomes annoyingly difficult if you choose to integrate in some other order.) $t_1$ can take any value between $0$ and $t_2$, so these are the bounds we will integrate $t_1$ over. Now, onto $t_2$. Recall that $t_2$ is bounded as follows: $0< t_1 < t_2 < t$, i.e., $t_2$ is bounded between $t_1$ and $t$. However, since we have marginalized $t_1$ already, we need no longer consider it when we integrate over $t_2$; it has, for all intents and purposes, been dealt with. Thus, we take the next tightest bound for $t_2$ and find that $t_2$ can take on values from $0$ to $t$. We thus proceed as follows:
+
 $$
 \begin{align}
 	P(N_t = 2) &= \int P(T_1\in dt_1, T_2 \in dt_2, T_3 > t)\\
@@ -107,11 +111,13 @@ $$
 	&= e^{-\lambda t} \lambda \left(\frac{t^2}{2}\right) = e^{-\lambda t} \frac{(\lambda t)^2}{2!}.
 \end{align}
 $$
+
 Voila! We get exactly what we expect again. Using what we learnt from these examples, we can go ahead and find $P(N_t = n)$ for some arbitrary $n$ to show that $N_t\sim Poisson(\lambda t)$.
 
 ### The General Case
 
 If there are exactly $n$ arrivals in $(0,t)$, we must have that the time of the first $n$ arrivals, $T_1, \ldots, T_n$ is near $t_1, \ldots, t_n$ respectively, and that the $(n+1)^{th}$ arrival is after $t$, i.e. that $T_{n+1} > t$. Translating this into the language of waiting times and integrating over bounds derived similarly to above, we find:
+
 $$
 \begin{align}
 	P(N_t = n) &= \int P(T_1\in dt_1, \ldots, T_{n-1}\in dt_{n-1}, T_n \in dt_n, T_{n+1} > t)\\
@@ -121,6 +127,7 @@ $$
 	&= e^{-\lambda t} \lambda^n \left(\frac{t^n}{n!}\right) = e^{-\lambda t} \frac{(\lambda t)^n}{n!}.
 \end{align}
 $$
+
 Thus, we have as desired, that $N_t$ has a $Poisson(\lambda t)$ distribution.
 
 There you go! We have shown that the definition of the Poisson process can be inverted. Well, almost. To complete the proof, we need to show that (1) the above result holds for any arbitrary interval $[s, s+t]$ instead of only intervals of the form $[0,t]$ and (2) the number of arrivals in disjoint intervals are independent. Both of these results can be shown true by exploiting the memoryless property of the Exponential distribution and the result above. Once again, I think this is worth doing if you have not done this before and of course, feel free to post in the comments or reach out to me directly [via email](mailto:malayandi12@gmail.com) if you need any help getting started/ if you get stuck.

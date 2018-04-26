@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 excerpt: "Why I started a blog. (Again.)"
-date:   2018-04-03 17:00:00 +0800
+date:   2018-04-27 00:00:00 +0800
 categories:
 ---
 
@@ -30,7 +30,7 @@ The open nature of a blog allows me to partake in this wonderful tradition of op
 
 So, what can you as a reader expect from this blog?
 
-As I previously mentioned, I hope to write about topics that I find interesting and have, for one reason or another, been curious about. This means that you can expect the vast majority of posts on this blog to be technical posts on topics that fall somewhere in the intersection of mathematics, statistics, and computer science; considering [my background and research interests](http://www.andypalan.com), you can especially expect a good number of posts on topics in AI/ML. To give you a better idea of what that means, I'm currently working on two posts: on (1) the multiple ways of looking at Poisson Processes and (2) autoencoders.
+As I previously mentioned, I hope to write about topics that I have been curious about, find interesting, and wish to share with others. This means that you can expect the vast majority of posts on this blog to be technical posts on topics that fall somewhere in the intersection of mathematics, statistics, and computer science; considering [my background and research interests](http://www.andypalan.com), you can especially expect a good number of posts on topics in AI/ML. To give you a better idea of what that means, I'm currently working on two posts: on (1) the multiple ways of looking at Poisson Processes and (2) autoencoders.
 
 Additionally, I intend to write the *occasional* opinion piece, primarily to overcome my fear of taking a public stand on tough issues – a platform as open and permanent as a blog seems an appropriate place to confront that fear head on.
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Inverting the Poisson Process"
 excerpt: "If A implies B, does B imply A? In the case of the Poisson process, yes."
-date:   2018-05-10 00:00:00 -0800
+date:   2018-05-10 00:00:00 +0000
 categories: "probability"
 ---
 

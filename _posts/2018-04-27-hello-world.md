@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 excerpt: "Why I started a blog. (Again.)"
-date:   2018-04-27 00:00:00 +0800
+date:   2018-04-27 00:00:00 +0000
 categories:
 ---
 

@@ -156,14 +156,16 @@ Please do leave your thoughts and questions in the comments section below, or se
 
 **_Bonus:_** There is in fact a third equivalent definition of the Poisson process: as a special case of a [pure birth process](https://en.wikipedia.org/wiki/Birth–death_process).
 
-Consider a process where (1) in any small interval $dt$, there may be at most one arrival; (2) this arrival occurs with some constant probability $\lambda\ dt$; (3) and this arrival is independent of all other arrivals outside this small interval. Formally, let $N_t$ denote the number of arrivals in $(0,t)$. $N_t$ is such that:
+Consider a process where (1) in any small interval $dt$, there may be at most one arrival; (2) this arrival occurs with some constant probability $\lambda\ dt$; (3) and this arrival is independent of all other arrivals outside this small interval. Formally, let $N_t$ denote the number of arrivals in $(0,t)$. $N_t$ is such that (1)
 
-* $P(N_{t+dt} = n+m\mid N_T = n) = \begin{cases} 
+$$P(N_{t+dt} = n+m\mid N_T = n) = \begin{cases} 
       \lambda\ dt + o(h) & m = 1 \\
       o(h) & m>1\\
       1 - \lambda\ dt +o(h) & m=0 
-   \end{cases}$
-* for $s< t$, the increment $N_t - N_s$ is independent of all arivals prior to $s$.
+   \end{cases}$$
+   
+   
+and (2) for $s< t$, the increment $N_t - N_s$ is independent of all arivals prior to $s$.
 
 (This definition is similar to that presented in [Probability and Random Process](https://www.amazon.com/Probability-Random-Processes-Geoffrey-Grimmett/dp/0198572220/ref=sr_1_1?ie=UTF8&qid=1525124232&sr=8-1&keywords=grimmett+stirzaker) by Grimmett and Stirzaker.)
 

@@ -42,6 +42,8 @@ Traditionally, in introductory/ intermediate probability courses, the _Poisson P
 * the number of arrivals in any interval of length $t$ has a $Poisson(\lambda t)$ distribution, i.e., $N_{(s,s+t)} \sim  Poisson(\lambda t)$;
 * and, the numbers of arrivals in disjoint time intervals are independent, i.e., for $s_1 \leq t_1 \leq s_2 \leq t_2$, the number of arrivals in $(s_1, t_1)$ is independent of the number of arrivals in $(s_2, t_2)$.
 
+(This definition may seem rather complicated but it encodes the simple assumptions discussed above: that each event occurs completely at random and is identical to, but does not affect the behavior of, any other event.)
+
 Using this definition, we can show that (1) the time between any two consecutive arrivals (the waiting time) has a $Exponential(\lambda)$ distribution and (2) that all the waiting times are independent of each other.
 
 We now show (1). Consider an arbitrary arrival $X_j$ that arrives at some time $s$. We will show that $W_j$ is distributed according to an $Exponential(\lambda)$ distribution by showing that they have the same survival function (i.e., $P(W_j > t)$).
@@ -81,7 +83,7 @@ This result is what we would expect if $N_t\sim Poisson(\lambda t)$. Great, we'r
 
 ### Case 1
 
-_**Note**_: _Recall that the probability that a continuous random variable $X$ takes any specific value is 0, i.e. $P(X = x) = 0$. (This is (sorta) because there are an infinite number of real numbers in any continuous interval: since the probabilities associated with each of these numbers must sum to one, they must be effectively infiticeminal to begin with.) To overcome this, we will compute $P(X \in (x, x+dx)) = P(X \in \Delta x)$ and take the limit as $dx \rightarrow 0$. (We henceforth use $\Delta x$ refers to the interval $(x, x+dx)$)._
+_**Note**_: _Recall that the probability that a continuous random variable $X$ takes any specific value is 0, i.e. $P(X = x) = 0$. (This is (sorta) because there are an infinite number of real numbers in any continuous interval: since the probabilities associated with each of these numbers must sum to one, they must be effectively infiticeminal to begin with.) To overcome this, we will compute $P(X \in \Delta x) = P(X \in (x, x+dx))$ and take the limit as $dx \rightarrow 0$.  (We henceforth use $\Delta x$ refers to the interval $(x, x+dx)$.) Recall that for small $dx$, we have $P(X \in \Delta x) = P(X \in (x, x+dx)) = f_X(x) \cdot dx$._
 
 Now, let's find the probability that there is exactly one arrival in $(0,t)$. This means that the time of the first arrival $T_1$ (and therefore the first waiting time $W_1$) must be at some point less than $t$; for now, let's say that the first arrival is near $x$ (i.e. $x\in \Delta x = (x, x+dx)$). The second arrival must however be at some point greater than $t$; as shown in Figure 3, this means that the second waiting time $W_2$ must be greater that $t-x$. (Technically speaking, we require that $W_2 > t-x-dx$ but we can ignore the $dx$ term since it will vanish when we take the limit $dx\rightarrow 0$.)
 
@@ -112,7 +114,7 @@ The bounds of this integral are a little tricky. We will first integrate over $t
 
 $$
 \begin{align}
-	P(N_t = 2) &= \int P(T_1\in dt_1, T_2 \in dt_2, T_3 > t)\\
+	P(N_t = 2) &= \int P(T_1\in \Delta t_1, T_2 \in dt_2, T_3 > t)\\
 	&= \int_0^t \int_0^{t_2} f_{W_1}(t_1)\cdot f_{W_2}(t_2-t_1)\cdot P(W_3>t-t_2)\ dt_1\ dt_2\\
 	&= \int_0^t \int_0^{t_2} \lambda e^{-\lambda t_1} \cdot \lambda e^{-\lambda (t_2-t_2)} \cdot e^{-\lambda (t-t_2)} \ dt_1\ dt_2\\
 	&= e^{-\lambda t} \lambda^2 \int_0^{t_2}\int_0^t \ dt_1\ dt_2\\
@@ -128,7 +130,7 @@ If there are exactly $n$ arrivals in $(0,t)$, we must have that the time of the 
 
 $$
 \begin{align}
-	P(N_t = n) &= \int P(T_1\in dt_1, \ldots, T_{n-1}\in dt_{n-1}, T_n \in dt_n, T_{n+1} > t)\\
+	P(N_t = n) &= \int P(T_1\in \Delta t_1, \ldots, T_{n-1}\in \Delta t_{n-1}, T_n \in  \Delta t_n, T_{n+1} > t)\\
 	&= \int_0^t \int_0^{t_n} \ldots \int_0^{t_2} f_{W_1}(t_1)\cdot \ldots \cdot f_{W_n}(t_n-t_{n-1})\cdot P(W_{n+1}>t-t_n)\ dt_1 \ldots dt_{n-1}\ dt_n\\
 	&= \int_0^t \int_0^{t_n} \ldots \int_0^{t_2} \lambda e^{-\lambda t_1}\cdot \ldots\cdot \lambda e^{-\lambda (t_n-t_{n-1})} \cdot e^{-\lambda (t-t_n)} \ dt_1 \ldots dt_{n-1}\ dt_n\\
 	&= e^{-\lambda t} \lambda^n \int_0^t \int_0^{t_n} \ldots \int_0^{t_2} \ dt_1 \ldots dt_{n-1}\ dt_n\\

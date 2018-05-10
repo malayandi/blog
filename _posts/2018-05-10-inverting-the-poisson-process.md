@@ -46,7 +46,7 @@ Traditionally, in introductory/ intermediate probability courses, the _Poisson P
 
 Using this definition, we can show that (1) the time between any two consecutive arrivals (the waiting time) has a $Exponential(\lambda)$ distribution and (2) that all the waiting times are independent of each other.
 
-We now show (1). Consider an arbitrary arrival $X_j$ that arrives at some time $s$. We will show that $W_j$ is distributed according to an $Exponential(\lambda)$ distribution by showing that they have the same survival function (i.e., $P(W_j > t)$).
+We now show (1). Consider an arbitrary arrival $X_{j-1}$ that arrives at some time $s$. We will show that $W_j$ is distributed according to an $Exponential(\lambda)$ distribution by showing that they have the same survival function (i.e., $P(W_j > t)$).
 
 ![Figure 2]({{site.url}}/assets/images/pp_post/fig2.png)
 
@@ -151,6 +151,8 @@ This result shows that there are actually multiple, _equivalent_ ways of definin
 As I've said before, the Poisson process is a wonderfully elegant stochastic model and there are plenty more of these beautiful results hidden within it. I highly recommend exploring the Poisson process on your own if you haven't already but just in case you want somewhere concrete to get started, here's another fun one: conditional on the fact there are $n$ arrivals in the interval (0, 1), what is the distribution of the time of the $k^{th}$ arrival, for $1\leq k \leq n$? What if we condition on there being $n$ arrivals in some arbitrary interval $(s, s+t)$ instead?
 
 Please do leave your thoughts and questions in the comments section below, or send them to me directly [via email](mailto:malayandi12@gmail.com). I will try to get back to you as soon as possible. Your feedback is very much appreciated. Until next time :)
+
+_Thank you to [Alvin Wan](http://alvinwan.com) and Chin Chang for reading early drafts of this post._
 
 ## Appendix
 

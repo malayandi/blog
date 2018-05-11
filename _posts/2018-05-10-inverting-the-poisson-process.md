@@ -61,7 +61,7 @@ $$
 
 We therefore have as desired: $W_j\sim$ $Exponential(\lambda)$.
 
-To build some intuition for why (2) holds, consider Figure 1 again. Look at the total arrival times $T_3$ and $T_4$. $T_3$ being longer necessarily means that $T_4$ will be longer since $T_4$ effectively contains $T_3$. (Note that we can write $T_4 = T_3 + W_4$.) They are clearly not independent since the length of one affects the length of the other. As we can see in the diagram however, there is no obvious relationship between any two waiting times, i.e., there is no clear reason why the length of one waiting time should affect the length of any other. One might therefore intuitively suspect that the waiting times are independent and indeed, they are.
+To build some intuition for why (2) holds, consider Figure 1 again. Look at the total arrival times $T_3$ and $T_4$. $T_3$ being longer necessarily means that $T_4$ will be longer since $T_4$ effectively contains $T_3$. (Note that we can write $T_4 = T_3 + W_4$. So, if $W_4$ is constant, $T_3$ being longer would imply that $T_4$ is longer.) They are clearly not independent since the length of one affects the length of the other. As we can see in the diagram however, there is no obvious relationship between any two waiting times, i.e., there is no clear reason why the length of one waiting time should affect the length of any other. One might therefore intuitively suspect that the waiting times are independent and indeed, they are.
 
 The formal proof of (2) is not terribly difficult, but is rather notationally dense. Thus, in the interest of brevity and clarity, I have elected to not include it here. However, it is a good exercise in proof writing and a good test of your understanding of Poisson processes to attempt the proof yourself. Feel free to post in the comments or reach out to me directly [via email](mailto:malayandi12@gmail.com) if you need any help getting started/ if you get stuck.
 
@@ -152,7 +152,7 @@ As I've said before, the Poisson process is a wonderfully elegant stochastic mod
 
 Please do leave your thoughts and questions in the comments section below, or send them to me directly [via email](mailto:malayandi12@gmail.com). I will try to get back to you as soon as possible. Your feedback is very much appreciated. Until next time :)
 
-_Thank you to [Alvin Wan](http://alvinwan.com) and Chin Chang for reading early drafts of this post._
+_Thank you to [Alvin Wan](http://alvinwan.com) and Chin Chang for reading early drafts of this post and offering helpful suggestions._
 
 ## Appendix
 

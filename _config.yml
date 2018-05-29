@@ -20,10 +20,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.electricsheep.farm" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Uncomment below two lines for local testing
-#baseurl: ""
-#url: ""
-
 twitter_username: 
 github_username:
 disqus:

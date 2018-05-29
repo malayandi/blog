@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Inverting the Poisson Process"
-excerpt: "If A implies B, does B imply A? In the case of the Poisson process, yes."
+title:  "Inverting the Poisson Process to Arrive at... the Poisson Process."
+excerpt: "In this post, we define a new stochastic process using an implication of the Poisson process. We show that this new process is in fact equivalent to the Poisson process."
 date:   2018-05-10 00:00:00 +0000
 categories: "probability"
 ---
@@ -152,8 +152,6 @@ As I've said before, the Poisson process is a wonderfully elegant stochastic mod
 
 Please do leave your thoughts and questions in the comments section below, or send them to me directly [via email](mailto:malayandi12@gmail.com). I will try to get back to you as soon as possible. Your feedback is very much appreciated. Until next time :)
 
-_Thank you to [Alvin Wan](http://alvinwan.com) and Chin Chang for reading early drafts of this post and offering helpful suggestions._
-
 ## Appendix
 
 **_Bonus:_** There is in fact a third equivalent definition of the Poisson process: as a special case of a [pure birth process](https://en.wikipedia.org/wiki/Birth–death_process).
@@ -194,8 +192,10 @@ The simplest way to try to prove independence here would be compute $P(N(s_1, t_
 had to integrate if we attempted to compute each of the two probabilities separately. We could then simply split the integral into its two components and arrive at the answer we desired. There is one tiny hitch however: If we try to write out the math for $P(N(s_1, t_1) = n_1, N(s_2, t_2) = n_2)$ as we did above, we will require that $X_{n_1+1} > t_1$ and, if we let $X_{j+1}$ denote the first arrival in the second arrival as before, also that $X_{j+1} > s_2$; however, note that it is entirely possible that $j= n_1$ and thus $X_{n_1+1} = X_{j+1}$. There may be some dependence here.
 
 Luckily, the memoryless property comes to our rescue. $X_{n_1+1} > t_1$ implies that $W_{n+1}$ has survived some amount of time $d$. When we deal with $W_{j+1}$, all we have to do is condition $W_{j+1}$ on the fact that $W_{n+1} > d$. If $j!= n_1$, then we can ignore this condition and simply deal with $W_{j+1}$ since $W_{j+1}$ and $W_{n+1}$ are independent by definition. If $j=n_1$, the distribution of $W_{j+1}$ conditioned on the fact that $W_{j+1} > d$ (in this case, $d = s-t_j$) is the same as the distribution of $W_{j+1}$. So, in either case, we end up handling $W_{j+1}$ on its own, independently from $W_{n_1+1}$. We can thus split the integral into two components as desired, concluding the proof.  -->
+\\
+_Thank you to [Alvin Wan](http://alvinwan.com) and Chin Chang for reading early drafts of this post and offering helpful suggestions._
 
-
+Last Updated on the 29th of May, 2018.
 
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Inverting the Poisson Process to Find... the Poisson Process."
 excerpt: "In this post, we define a new stochastic process from an implication of the traditional Poisson process; and then show that this new process is equivalent to the Poisson process itself."
-date:   2018-05-10 00:00:00 +0000
+date:   2018-05-29 00:00:00 +0000
 categories: "probability"
 ---
 
@@ -194,9 +194,6 @@ had to integrate if we attempted to compute each of the two probabilities separa
 Luckily, the memoryless property comes to our rescue. $X_{n_1+1} > t_1$ implies that $W_{n+1}$ has survived some amount of time $d$. When we deal with $W_{j+1}$, all we have to do is condition $W_{j+1}$ on the fact that $W_{n+1} > d$. If $j!= n_1$, then we can ignore this condition and simply deal with $W_{j+1}$ since $W_{j+1}$ and $W_{n+1}$ are independent by definition. If $j=n_1$, the distribution of $W_{j+1}$ conditioned on the fact that $W_{j+1} > d$ (in this case, $d = s-t_j$) is the same as the distribution of $W_{j+1}$. So, in either case, we end up handling $W_{j+1}$ on its own, independently from $W_{n_1+1}$. We can thus split the integral into two components as desired, concluding the proof.  -->
 \\
 _Thank you to [Alvin Wan](http://alvinwan.com) and Chin Chang for reading early drafts of this post and offering helpful suggestions._
-
-Last Updated on the 29th of May, 2018.
-
 
 
 

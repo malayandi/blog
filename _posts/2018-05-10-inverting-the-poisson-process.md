@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inverting the Poisson Process to Find... the Poisson Process."
-excerpt: "In this post, we define a new stochastic process from an implication of the traditional Poisson process; and then show that this new process is equivalent to the Poisson process itself."
+excerpt: "In this post, we consider an implication of the traditional Poisson process, and use it to define a new stochastic process; we then show that this new process is equivalent to the Poisson process itself."
 date:   2018-05-29 00:00:00 +0000
 categories: "probability"
 ---

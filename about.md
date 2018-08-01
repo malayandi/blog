@@ -3,6 +3,7 @@ layout: page
 title: about
 permalink: /about/
 ---
+
 Contributors to this blog include:
 
 * [Andy Palan](www.andypalan.com)

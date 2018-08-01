@@ -1,10 +1,14 @@
 ---
 layout: page
-title: about me
-redirect_to:
-    - http://www.andypalan.com
+title: about
 permalink: /about/
 ---
+
+Contributors to this blog include:
+
+* [Andy Palan](www.andypalan.com)
+* Chin Chang
+
 <!--
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 -->

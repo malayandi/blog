@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lower(-Bound) Your Expectation"
+title:  "Lower(-Bound) Your Expectations"
 excerpt: "We take a closer look at Jensen's inequality and offer a proof of it, before looking at two applications of it: in deriving the AM-GM inequality and in proving the Rao-Blackwell theorem."
 author: by Chin Chang and Andy Palan
 date:   2018-08-01 00:00:00 -0800
@@ -8,7 +8,7 @@ date:   2018-08-01 00:00:00 -0800
 categories: "probability"
 ---
 
-***Prerequisites:*** *The following discussion of Jensen's Inequality assumes basic knowledge of probability theory (e.g., expectation, conditional probability).*
+***Prerequisites:*** *This post assumes basic knowledge of probability theory (e.g., expectation, conditional probability).*
 
 Jensen's inequality is a fairly well-known and widely-used theorem in probability theory. It is one of those results that would be mentioned in passing: I cannot begin to count the number of times I have heard the statement "This line follows, of course, by Jensen's inequality". Yet, we never thought about it too much; perhaps, this was because the result *seems* intuitive enough to simply accept.
 

@@ -6,7 +6,7 @@ permalink: /about/
 
 Contributors to this blog include:
 
-* [Andy Palan](www.andypalan.com)
+* [Andy Palan](http://www.andypalan.com)
 * Chin Chang
 
 <!--
